@@ -6,10 +6,61 @@
     box-sizing: border-box;
 }
 
+.container-md{
+    width: min(880px, 100vw);
+    margin-inline: auto;
+    padding: 1rem;
+}
 
 body{
-    background-color: #CBCBCB;
     font-family: system-ui, sans-serif;
     line-height: 1.5;
-    font-size: 1rem;
+    font-size: 1rem;;
+}
+
+
+table, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: .5rem 1rem;
+    overflow: auto;
+}
+
+th, td{
+    width: 25%;
+    text-align: center;
+}
+
+tr:hover{
+    background-color: lightcyan;
+}
+
+form{
+    display: none;
+    gap: .3rem;
+    flex-wrap: wrap;
+}
+
+button{
+    border: none;
+    padding: .8rem 1.5rem;
+    background-color: rgb(100, 149, 237);
+    color: whitesmoke;
+    border-radius: .3rem;
+    transition: .3s ease-in-out;
+
+    &:hover{
+        background-color: rgba(100, 149, 237, 0.9);
+    }
+}
+
+.addBook{
+    display: block;
+    margin: 2rem auto;
+}
+
+input, select{
+    padding: .6rem;
+    border-radius: .3rem;
+    border: 1px solid gray;
 }

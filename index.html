@@ -8,38 +8,37 @@
 </head>
 <body>
 
-    <button class="addBook">Add Book</button>
+    <section class="container-md">
+        <button class="addBook">Add Book</button>
 
-    <form action="" class="formBook">
-        <input type="text" name="bookTitle" id="bookTitle" placeholder="Book title" required>
-        <input type="text" name="author" id="author" placeholder="Author" required>
-        <input type="number" name="bookPages" id="bookPages" placeholder="How many pages" required>
-        <select name="status" id="read" title="status">
-            <option value="read">Read</option>
-            <option value="notRead">Not Read</option>
-        </select>
-        <button type="submit" class="submit">Submit</button>
-    </form>
+        <form action="" class="formBook">
+            <input type="text" name="bookTitle" id="bookTitle" placeholder="Book title" required>
+            <input type="text" name="author" id="author" placeholder="Author" required>
+            <input type="number" name="bookPages" id="bookPages" placeholder="How many pages" required>
+            <select name="status" id="read" title="status">
+                <option value="read">Read</option>
+                <option value="notRead">Not Read</option>
+            </select>
+            <button type="submit" class="submit">Submit</button>
+        </form>
 
-
-
-    <br>
+        <br>
     
-    <table>
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Author</th>
-                <th>Pages</th>
-                <th>Status</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody class="tablebody">
+        <table class="">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody class="tableBody">
 
-        </tbody>
-    </table>
-
+            </tbody>
+        </table>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
